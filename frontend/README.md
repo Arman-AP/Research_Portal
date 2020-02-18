@@ -1,8 +1,8 @@
 
 
 <div align="center"><strong>Research Portal React BoilerPlate</strong></div>
-<div align="center">this project has been extended from react-boilrplate</div>
-<div align="left">this application is still under developement.</div>
+<div align="center">this project has been extended from react-boilrplate and has been since extended to support JWT authentication and custom functionalities integrated with a SQL database. Its backend is powered by Strapi and follows a REST architecture. This application is still under developement.</div>
+<div align="left"></div>
 
 
 ## Features

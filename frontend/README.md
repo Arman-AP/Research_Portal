@@ -1,9 +1,9 @@
-<img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
 
-<br />
 
-<div align="center"><strong>Start your next react project in seconds</strong></div>
-<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
+<div align="center"><strong>Research Portal React BoilerPlate</strong></div>
+<div align="center">this project has been extended from react-boilrplate</div>
+<div align="left">this application is still under developement.</div>
+
 
 <br />
 

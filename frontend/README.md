@@ -1,9 +1,11 @@
-<img src="https://raw.githubusercontent.com/react-boilerplate/react-boilerplate-brand/master/assets/banner-metal-optimized.jpg" alt="react boilerplate banner" align="center" />
 
-<br />
 
-<div align="center"><strong>Start your next react project in seconds</strong></div>
-<div align="center">A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices</div>
+<div align="center"><strong>Research Portal React BoilerPlate</strong></div>
+<div align="center">this project has been extended from react-boilrplate and has been since extended to support JWT authentication and custom functionalities integrated with a SQL database. Its backend is powered by Strapi and follows a REST architecture. This application is still under developement.</div>
+<div align="left"></div>
+
+
+## Features
 
 <br />
 
@@ -46,10 +48,8 @@
 <br />
 
 <div align="center">
-  <sub>Created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and maintained with ❤️ by an amazing <a href="https://github.com/orgs/react-boilerplate/people">team of developers</a>.</sub>
+  <sub>The original boilerplate of this project wass created by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and maintained with ❤️ by an amazing <a href="https://github.com/orgs/react-boilerplate/people">team of developers</a>.</sub>
 </div>
-
-## Features
 
 <dl>
   <dt>Quick scaffolding</dt>
@@ -101,7 +101,7 @@ There’s also a <a href="https://vimeo.com/168648012">fantastic video</a> on ho
 ## Quick start
 
 1.  Make sure that you have Node.js v8.15.1 and npm v5 or above installed.
-2.  Clone this repo using `git clone --depth=1 https://github.com/react-boilerplate/react-boilerplate.git <YOUR_PROJECT_NAME>`
+2.  Clone this repo
 3.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.<br />
 4.  Run `npm run setup` in order to install dependencies and clean the git repo.<br />
     _At this point you can run `npm start` to see the example app at `http://localhost:3000`._

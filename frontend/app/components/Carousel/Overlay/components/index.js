@@ -15,9 +15,27 @@ class THREE extends React.Component {
 
 }
 render() {
+        const Buttons = [
+                "Nanoscience", "Nanotechnology",
+                "Renewable Energy", "Sustainable Development",
+                "Life Sciences", "Biotechnology", "Bioinformatics",
+                "Mechanics", "Materials Science", "Complex Systems",
+                "Ecology", "Climate", "Environmental Science", "Operations", "Decision Science",
+                "Econometrics", "Human Interface Technology"];
+
+        Buttons.sort((a, b) => a.length - b.length);
+        var button_list = []
+        for (let index = 0; index < Buttons.length; index++) {
+                button_list.push(
+                        <button key={index} type="button" className="btn  m-1 btn-outline-light research-b">{Buttons[index]}</button>
+                );
+        } 
         return (
                 <div className=" w-100 h-100 container ">
-                        <div className="row pt-3">
+                        
+                        <div className="row h-100">
+                                <div className="col-12">
+                                <div className="row pt-3">
                                 <div className="col-12 col-lg-6 ">
                                         <h2 className="text-light">
                                                 Research and Publications
@@ -31,9 +49,38 @@ render() {
                                                 </div>
                                         </div>
                                 </div>
+                                <div className="col-12 text-light py-1">
+                                        <h5>The Institute devotes its efforts to interdisciplinary 
+                                                projects that support three main pillars:</h5>
+                                                <ul>
+                                                        <li class="py-1">
+                                                        Fundamental and applied research in sciences
+                                                        </li>
+                                                        <li class="py-1">
+                                                        
+Innovative technologies in industry and business, economics and finance
+                                                        </li>
+                                                <li class="py-1">
+                                                
+Development and applications of mathematical and statistical modelling to global issues of sustainability.
+                                                </li>
+                                                </ul>
+
+                                </div>
                         </div>
-                        <div className="row ">
-                                <div className="col-12">
+                                </div>
+                                <div className="col-12 top-down-fade-parent">
+                                <div className="col-12 text-center d-none d-lg-block text-light py-2">Discover Our Research</div>
+                                                {/* Discover Button that lists the button_list |/| Only can be seen on mobile (<992px) */}
+                                                <div className="col-12 d-block d-lg-none text-center text-light py-2">
+                                                        <button className="btn  btn-outline-light " type="button">
+                                                                Discover</button>
+                                                </div>
+                                <div className="w-100  row m-0 mt-auto d-none d-lg-flex justify-content-around btn-list-remove " id="">
+                                                        {button_list}
+                                                </div>
+                                </div>
+                                <div className="col-12 d-none">
                                         <div className="card research-card">
                                                 <div className="card-header">
                                                         Featured Publications
@@ -118,21 +165,7 @@ class TWO extends React.Component {
 class ONE extends React.Component {
 
         render() {
-                const Buttons = [
-                        "Nanoscience", "Nanotechnology",
-                        "Renewable Energy", "Sustainable Development",
-                        "Life Sciences", "Biotechnology", "Bioinformatics",
-                        "Mechanics", "Materials Science", "Complex Systems",
-                        "Ecology", "Climate", "Environmental Science", "Operations", "Decision Science",
-                        "Econometrics", "Human Interface Technology"];
-
-                Buttons.sort((a, b) => a.length - b.length);
-                var button_list = []
-                for (let index = 0; index < Buttons.length; index++) {
-                        button_list.push(
-                                <button key={index} type="button" className="btn  m-1 btn-outline-light research-b">{Buttons[index]}</button>
-                        );
-                } 
+                 
                 return (
                         <div className=" w-100 h-100 container ">
                                 <div className="row h-100">
@@ -140,15 +173,10 @@ class ONE extends React.Component {
                                                 <h2 className="text-light ">MS2Discovery strives to create a dynamic and engaging environment that is highly conducive to interdisciplinary research, collaboration, and communication.</h2>
                                         </div>
                                         <div className="col-12  my-lg-auto  top-down-fade-parent pb-5">
-                                                <div className="col-12 text-center d-none d-lg-block text-light py-2">Discover Our Research</div>
-                                                {/* Discover Button that lists the button_list |/| Only can be seen on mobile (<992px) */}
-                                                <div className="col-12 d-block d-lg-none text-center text-light py-2">
-                                                        <button className="btn  btn-outline-light " type="button">
-                                                                Discover</button>
-                                                </div>
+                                                
 
                                                 <div className="h-50 w-100  row m-0 mb-auto d-none d-lg-flex justify-content-around btn-list-remove " id="">
-                                                        {button_list}
+                                                        
                                                 </div>
                                         </div>
                                 </div>
